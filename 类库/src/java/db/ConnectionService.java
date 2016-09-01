@@ -15,7 +15,6 @@ import java.sql.SQLException;
 import javax.sql.DataSource;
 
 import org.apache.commons.dbcp.BasicDataSource;
-import org.common.util.ConnectionService;
 
 import sun.util.logging.resources.logging;
 
