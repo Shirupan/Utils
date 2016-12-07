@@ -32,7 +32,7 @@ public class ConnectionService {
 
 	private DataSource ds_business = setupDataSource(DB_BUSINESS);
 
-	public synchronized Connection getConnectionForLocal() {
+	public synchronized Connection getConnectionForBusiness() {
 		try {
 			return ds_business.getConnection();
 		} catch (SQLException ex) {
@@ -138,7 +138,7 @@ public class ConnectionService {
 		ResultSet rs = null;
 		long result;
 		try {
-			con = ConnectionService.getInstance().getConnectionForLocal();
+			con = ConnectionService.getInstance().getConnectionForBusiness();
 			ps = con.prepareStatement("select * from tb_name where x=?");
 			int m = 1;
 			ps.setString(m++, "");

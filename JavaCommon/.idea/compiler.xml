@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="common" />
+        <module name="Common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.5" />
+      <module name="Common" target="1.5" />
       <module name="JavaCommon" target="1.5" />
     </bytecodeTargetLevel>
   </component>
